@@ -1,0 +1,10 @@
+[Unit]
+Description=Chạy tập lệnh nhấp nháy đèn GPIO
+
+[Service]
+ExecStart=/usr/local/bin/start_gpio.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
